@@ -12,93 +12,56 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hello World!</h1>
-		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on one the github icon link below which will take you to my repo.
+		<h1 class="title mb-6"> Zápisky z Galície alebo putovanie do Compostely po Anglickej ceste.</h1>
+		<p class="mb-4 text-xl">
+
+      29.4. – 8.5. 2023 <br/>
+
+
+      Alenka, Blaženka, Silvika, Vlado, Miloš
 		</p>
-		<SocialList />
 	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
+	<section aria-label="Blog post list" class="mt-16 text-lg">
+    <h1 class="mb-4  font-extrabold">29.4.2023 Deň 1.</h1>
+    <p>
+
+      Naša cesta začína ráno o 7:30 v Rožňave pri plynárenskej bytovke, kde sme si dali zraz. Naša octavia
+      ide do garáže, z ktorej vychádza nedočkavý mercedes, ktorý nás so šoférom Vladom s prehľadom
+      deportuje na letisko v Budapešti. Cestou si okrem šoféra pochutnáme na Pálave. Na letisku sme
+      s malou časovou rezervou, ktorú ženská časť partie využije na kúpenie fľaštičky Unicumu. Musíme ho
+      skonzumovať ešte pred kontrolou batožiny, ale nemáme s tým problém. Vlastne jeden menší má
+      Vlado. Stratil slnečné okuliare. Náš let do Milána –Bergama prebehne rýchlo. Ostávajú nám 4 hodinky
+      čistého času do ďalšieho letu a my ich využívame na ochutnanie talianskych jedál v priľahlom
+      obchodnom centre Orio. Skutočne výborná pizza alebo „pasta“ stoja za zmienku. Lietadlo do Santiaga
+      de Compostela odlieta s malým meškaním a o 22:00 pristávame. Rýchlo sa zorientujeme na novom
+      mieste a nasadneme na bus č. 6A, ktorý nás dovezie po polhodinke na naše prvé ubytko
+      v Compostele. Po krátkom hľadaní vchodu musíme zadať na vchodové ale aj ďalšie dvere rôzne kódy
+      a šifry. Nakoniec to zvládneme a spokojne zaspíme po celodennom cestovaní. Jedna pani z vedľajšej
+      izby nás upozorňuje, že chce spať a máme sklapnúť.
+    </p>
+      <br/><br/>
+    <h1 class="mb-4  font-extrabold">30.4.2023 Deň 2.</h1>
+    <p>
+
+      Keďže je dnes nedeľa, máme ráno obavy, či nájdeme nejaký obchodík alebo nejaké miestečko, kde by
+      sa dalo naraňajkovať. Po dvoch neúspešných pokusoch pri supermecadoch ideme na benzínku, kde si
+      kúpime nejaké šalátiky, zeleninu a pečivo. Presúvame sa smerom k centru a hľadáme nejaké lavičky
+      alebo park, kde by sme niečo prekúsili. Po pár minútach nájdeme celkom vhodné miesto a tiež
+      začínajú otvárať pekárne, kaviarne. No my si svoje nakúpené raňajky poctivo skonzumujeme na
+      lavičkách, ako praví slovenskí cami(o)nisti. Po uhasení hladu ideme do prvej cafetérie na kávu
+      a dostaneme aj chutný koláčik ku káve. Do odchodu autobusu do Ferrolu máme ešte čas, ktorý
+      využijeme na prechádzku v blízkom parku so starými stromami. Na konci parku sa pokocháme
+      krásnym výhľadom na staré mesto a na dominantu Compostely – Katedrálu sv. Jakuba. Autobus do
+      Ferrolu má meškanie viac ako hodinu, čo využijem na slušné nadávanie. Po 1 a pol hodinovej ceste
+      nájdeme náš hostel celkom rýchlo. Zhodíme rýchlo batohy a ideme hneď na vychádzku do prístavu
+      pozrieť si miesto oficiálneho začiatku trasy Camina Inglés. Je už skoro večer, no máme problém sa tu
+      najesť, lebo jedlá sa začínajú v reštikách podávať až po 20:00. Tak nám zatiaľ na terase prinesú
+      niekoľko priesvitných kúskov koliesok klobásky a miniatúrne rožky. O pár metrov ďalej nám zas
+      prinesú namiesto večere palacinky. V turistickom infocentre získame aj prvú pečiatku do nášho pasu
+      pútnikov, do kredenciálu. V prístave si urobíme pár pekných fotiek. O pol desiatej tu ešte veselo svieti
+      slnko. Ideme sa konečne aj navečerať. V jednej zašitej putike nám urobia trochu mastné vyprážané
+      ryby a ochutnáme aj kvalitné španielske víno.
+    </p>
 	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			<li>
-				<a
-					href="https://astro.build"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Astro
-				</a>:
-				<p class="inline-block sm:mt-2">Build fast websites, faster.</p>
-			</li>
-			<li>
-				<a
-					href="https://docs.astro.build/en/guides/integrations-guide/image/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>@astro/image
-				</a>:
-				<p class="inline-block sm:mt-2">
-					An Astro integration for optimising images in Astro projects.
-				</p>
-			</li>
-			<li>
-				<a
-					href="https://tailwindcss.com"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Tailwind CSS
-				</a>:
-				<p class="inline-block sm:mt-2">
-					Rapidly build modern websites without ever leaving your HTML.
-				</p>
-			</li>
-			<li>
-				<a
-					href="https://www.markdownguide.org/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Markdown
-				</a>:
-				<p class="inline-block sm:mt-2">Simple and easy-to-use markup language.</p>
-			</li>
-			<li>
-				<a
-					href="https://mdxjs.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>MDX
-				</a>:
-				<p class="inline-block sm:mt-2">Markdown for the component era.</p>
-			</li>
-			<li>
-				<a
-					href="https://github.com/vercel/satori"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="cactus-link inline-block"
-					>Satori
-				</a>:
-				<p class="inline-block sm:mt-2">Generating png Open Graph images for blog posts</p>
-			</li>
-		</ul>
-	</section>
+
 </PageLayout>
